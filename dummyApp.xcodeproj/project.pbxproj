@@ -12,6 +12,7 @@
 		16CB687E286E260400B6F554 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CB687D286E260400B6F554 /* HomeViewController.swift */; };
 		16CB6883286E260600B6F554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CB6882286E260600B6F554 /* Assets.xcassets */; };
 		16CB6886286E260600B6F554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CB6884286E260600B6F554 /* LaunchScreen.storyboard */; };
+		16CB6894286E2B0700B6F554 /* ViewCodingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CB6893286E2B0700B6F554 /* ViewCodingProtocol.swift */; };
 		1F3C96EA5892ACB3F46257FF /* Pods_dummyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AAA53FA7FC70C7604E8A06 /* Pods_dummyApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		16CB6882286E260600B6F554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16CB6885286E260600B6F554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16CB6887286E260600B6F554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CB6893286E2B0700B6F554 /* ViewCodingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodingProtocol.swift; sourceTree = "<group>"; };
 		70713C3FCE462DEBADED253E /* Pods-dummyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dummyApp.release.xcconfig"; path = "Target Support Files/Pods-dummyApp/Pods-dummyApp.release.xcconfig"; sourceTree = "<group>"; };
 		E7AAA53FA7FC70C7604E8A06 /* Pods_dummyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dummyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,10 +63,9 @@
 		16CB6878286E260400B6F554 /* dummyApp */ = {
 			isa = PBXGroup;
 			children = (
-				16CB688F286E266600B6F554 /* Components */,
-				16CB688E286E265D00B6F554 /* Features */,
 				16CB688D286E265200B6F554 /* App */,
-				16CB687D286E260400B6F554 /* HomeViewController.swift */,
+				16CB688E286E265D00B6F554 /* Features */,
+				16CB688F286E266600B6F554 /* Components */,
 				16CB6882286E260600B6F554 /* Assets.xcassets */,
 				16CB6884286E260600B6F554 /* LaunchScreen.storyboard */,
 				16CB6887286E260600B6F554 /* Info.plist */,
@@ -84,6 +85,7 @@
 		16CB688E286E265D00B6F554 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				16CB6890286E2A4300B6F554 /* Home */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -91,8 +93,33 @@
 		16CB688F286E266600B6F554 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				16CB6892286E2AEB00B6F554 /* ViewCoding */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		16CB6890286E2A4300B6F554 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				16CB6891286E2A4900B6F554 /* Controllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		16CB6891286E2A4900B6F554 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16CB687D286E260400B6F554 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		16CB6892286E2AEB00B6F554 /* ViewCoding */ = {
+			isa = PBXGroup;
+			children = (
+				16CB6893286E2B0700B6F554 /* ViewCodingProtocol.swift */,
+			);
+			path = ViewCoding;
 			sourceTree = "<group>";
 		};
 		5556C5B592CEAEB355660890 /* Frameworks */ = {
@@ -109,7 +136,6 @@
 				033EC61D15A5E71845824121 /* Pods-dummyApp.debug.xcconfig */,
 				70713C3FCE462DEBADED253E /* Pods-dummyApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CB6894286E2B0700B6F554 /* ViewCodingProtocol.swift in Sources */,
 				16CB687E286E260400B6F554 /* HomeViewController.swift in Sources */,
 				16CB687A286E260400B6F554 /* AppDelegate.swift in Sources */,
 				16CB687C286E260400B6F554 /* SceneDelegate.swift in Sources */,
